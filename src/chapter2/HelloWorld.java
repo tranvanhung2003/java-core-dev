@@ -2,9 +2,10 @@ package chapter2;
 
 public class HelloWorld {
     public static void main(String[] args) {
-        String age = "50";
-        int realAge = Integer.valueOf(age);
+        int a = 10, b = 3;
 
-        System.out.println("Hello, World! I am " + realAge + " years old.");
+        float c = (float) a / b;
+
+        System.out.printf("a = %d, b = %d, a / b = %.2f%n", a, b, c);
     }
 }
