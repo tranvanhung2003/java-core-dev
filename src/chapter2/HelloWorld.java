@@ -1,11 +1,19 @@
 package chapter2;
 
+import java.util.Scanner;
+
 public class HelloWorld {
     public static void main(String[] args) {
-        int a = 10, b = 3;
+        Scanner scanner = new Scanner(System.in);
 
-        float c = (float) a / b;
+        String name = "Tran Van Hung";
 
-        System.out.printf("a = %d, b = %d, a / b = %.2f%n", a, b, c);
+        System.out.print("Nhap tuoi cua ban: ");
+        int age = scanner.nextInt();
+
+        System.out.println("Ten cua ban la: %s va tuoi cua ban la: %d".formatted(name, age));
+
+        float pi = 3.1415164755f;
+        System.out.println("Gia tri cua pi la: %.2f".formatted(pi));
     }
 }
